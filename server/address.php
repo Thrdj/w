@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
             <title> Responsive Payment getway form design in Hindi</title>
-        <link rel="stylesheet" type="text/css" href="payment.css">
+        <link rel="stylesheet" type="text/css" href="address.css">
     </head>
     <body>
         <header>
@@ -23,7 +23,17 @@
                         <input type="text" name"" placeholder="Enter city">
                     </form>
             </div>
-            <div class="right">
+            <div id="zip">
+            <label>
+                State
+                <select>
+                    <option>Choose State..</option>
+                </select>
+            </label>
+            <label>
+                Zip code
+                <input type="number" name="" placeholder="Zip code">
+            </label>
             </div>
             </div>
         </header>
