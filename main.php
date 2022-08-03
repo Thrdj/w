@@ -15,5 +15,25 @@
                 <img class="mySlides" src="img_name2.jpg" style="width:100%">
                 <img class="mySlides" src="img_name3.jpg" style="width:100%">
     </div>
+    <div class="w3-content" style="max-width:400px">
+
+<img class="mySlides" src="img_vernazza.png" style="width:100%">
+
+<div class="mySlides w3-container w3-red">
+  <h1><b>Did You Know?</b></h1>
+  <h1><i>We plan to sell trips to the moon in the 2020s</i></h1>
+</div>
+
+<img class="mySlides" src="img_monterosso.png" style="width:100%">
+
+<div class="mySlides w3-container w3-xlarge w3-white w3-card-8">
+  <p><span class="w3-tag w3-yellow">New!</span>
+  <p>6 Crystal Glasses</p>
+  <p>Only $99 !!!</p>
+</div>
+
+<img class="mySlides" src="img_manarola.png" style="width:100%">
+
+</div>
     </header>
 </html>
