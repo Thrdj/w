@@ -1,50 +1,51 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS</title>
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/lib/w3.css">
 <style>
-.mySlides {display:none;}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
 </style>
+</head>
 <body>
 
-<div class="w3-content" style="max-width:400px">
-
-<img class="mySlides" src="img_vernazza.png" style="width:100%">
-
-<div class="mySlides w3-container w3-red">
-  <h1><b>Did You Know?</b></h1>
-  <h1><i>We plan to sell trips to the moon in the 2020s</i></h1>
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
 </div>
 
-<img class="mySlides" src="img_monterosso.png" style="width:100%">
-
-<div class="mySlides w3-container w3-xlarge w3-white w3-card-8">
-  <p><span class="w3-tag w3-yellow">New!</span>
-  <p>6 Crystal Glasses</p>
-  <p>Only $99 !!!</p>
+<div style="padding-left:16px">
+  <h2>Top Navigation Example</h2>
+  <p>Some content..</p>
 </div>
-
-<img class="mySlides" src="img_manarola.png" style="width:100%">
-
-</div>
-
-<script>
-var slideIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none"; 
-    }
-    slideIndex++;
-    if (slideIndex > x.length) {slideIndex = 1} 
-    x[slideIndex-1].style.display = "block"; 
-    setTimeout(carousel, 2000); 
-}
-</script>
 
 </body>
-</html> 
+</html>
