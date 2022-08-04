@@ -9,37 +9,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://www.mymemolist.com/" target="_blank">
         <link rel="stylesheet" href="styles.css">
-          <style>.mySlides {display:none;}</style>
-    <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-    </div>
-    <div class="mymemolist-content mymemolist-section" style="max-width:500px">
-         <img class="mySlides" src="img_name1.jpg" style="width:100%">
-         <img class="mySlides" src="img_name2.jpg" style="width:100%">
-         <img class="mySlides" src="img_name3.jpg" style="width:100%">
-    </div>
-    <div class="mymemolist-content" style="max-width:400px">
-
-<img class="mySlides" src="" style="width:100%">
-    
-    <div class="mySlides mymemolist-container mymemolist-red">
-      <h1><b>Did You Know?</b></h1>
-      <h1><i>We plan to sell trips to the moon in the 2020s</i></h1>
-        </div>
-
-<img class="mySlides" src="" style="width:100%">
-
-    <div class="mySlides mymemolist-container mymemolist-xlarge mymemolist-white mymemolist-card-8">
-      <p><span class="mymemolist-tag mymemolist-yellow">New!</span>
-      <p>6 Crystal Glasses</p>
-      <p>Only $99 !!!</p>
-    </div>
-
-<img class="mySlides" src="" style="width:100%">
-
-    </div>
     </header>
+    <body>
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="city.jpeg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="umi.jpeg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+    </body>
 </html>
