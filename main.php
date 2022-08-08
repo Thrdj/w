@@ -8,18 +8,18 @@
         <meta name="author" content="KUN">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://www.mymemolist.com/" target="_blank">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
         <link rel="stylesheet" href="styles.css">
-    </header>
-    <body>
-    <div class="slideshow-container">
+        <div class="slideshow-container">
     <div class="mySlides fade">
       <div class="numbertext">1 / 2</div>
-      <img src="city.jpeg" style="width:50%">
+      <img src="bsd.jpg" style="width:50%">
     </div>
 
     <div class="mySlides fade">
       <div class="numbertext">2 / 2</div>
-      <img src="umi.jpeg" style="width:50%">
+      <img src="bsd.jpg" style="width:50%">
     </div>
 
     <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -32,8 +32,12 @@
       <span class="dot" onclick="currentSlide(1)"></span> 
       <span class="dot" onclick="currentSlide(2)"></span>
     </div>
+    </header>
+    <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script>
-      document.getElementById("Photomainslide.js").innerHTML;
+      import_request_variables="Photomainslide.js"
     </script>
   </body>
 </html>
