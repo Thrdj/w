@@ -106,5 +106,19 @@
     <div class="home_content">
         <div class="text">Home Content</div>
     </div>
+<!--Add Javascript-->
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let search= document.querySelector(".bx-search-alt");
+    
+        btn.onclick = function() {
+        sidebar.classList.toggle("active");
+    }
+        search.onclick = function() {
+        sidebar.classList.toggle("active");
+    }
+
+    </script>
 </body>
 </html>
