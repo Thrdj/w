@@ -66,7 +66,29 @@ body{
     margin: 0 5px;
     list-style: none;
     line-height: 50px;
-    border-radius: 12px;
+}
+
+.sidebar ul li .tooltip{
+    position: absolute;
+    left: 122px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 6px;
+    height: 35px;
+    width: 122px;
+    background: #fff;
+    line-height: 35px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: 0s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar ul li:hover .tooltip{
+    transition: all 0.5s ease;
+    opacity: 1;
+    top: 50%;
 }
 
 .sidebar ul li input{
@@ -124,6 +146,7 @@ body{
     position: relative;
     padding: 10px 6px;
     height: 60px;
+    background: #1d1b31;
 }
 
 .profile_content .profile .profile_details{
@@ -146,8 +169,26 @@ body{
     font-size: 12px;
 }
 
-.profile#log_out{
+.profile #log_out{
     position: absolute;
     left: 88%;
     bottom: 5px;
+    transform: translateX(-50%);
+    min-width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 12px;
+}
+
+.home_content{
+    position: absolute;
+    height: 100%;
+    width: calc(100% -240px);
+    left: 240px;
+}
+.home_content .text{
+    font-size: 25px;
+    font-weight: 500;
+    color: #1d1b31;
+    margin-top: 12px;
 }
