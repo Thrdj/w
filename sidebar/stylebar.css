@@ -140,6 +140,7 @@ body{
     color: #fff;
     bottom: 0;
     left: 0;
+    width: 100%;
 }
 
 .sidebar .profile_content .profile{
@@ -166,6 +167,10 @@ body{
 }
 
 .profile .profile_details .name{
+    font-size: 12px;
+}
+
+.profile .profile_details .job{
     font-size: 12px;
 }
 
