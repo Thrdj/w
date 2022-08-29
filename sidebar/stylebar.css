@@ -49,6 +49,21 @@ body{
     margin-right: 5px; 
 }
 
+.sidebar .logo_details i{
+    font-size: 30px;
+    color: #fff;
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.sidebar .logo_details .logo_name{
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+}
+
 .logo_details .logo_name{
     font-size: 22px;
     color: #fff;
