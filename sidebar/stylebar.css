@@ -39,7 +39,7 @@ body{
     pointer-events: none;
 }
 
-.sidebar .active .logo_content .logo{
+.sidebar.active .logo_content .logo{
     opacity: 1;
 }
 
