@@ -19,9 +19,14 @@ body{
     top: 0;
     left: 0;
     height: 100%;
-    width: 240px;
+    width: 78px;
     background: #11101d;
     padding: 6px 14px;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active {
+    width: 240px;
 }
 
 .sidebar .logo_content .logo{
@@ -30,6 +35,12 @@ body{
     height: 50px;
     width: 100%;
     align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar .active .logo_content .logo{
+    opacity: 1;
 }
 
 .logo_content .logo i{
@@ -45,14 +56,18 @@ body{
 .sidebar #btn{
     position: absolute;
     color: #fff;
-    left: 90%;
     top: 6px;
+    left: 50%;
     font-size: 20px;
     height: 50px;
     width: 50px;
     text-align: center;
     line-height: 50px;
     transform: translateX(-50%);
+}
+
+.sidebar.active #btn{
+    left: 90%;
 }
 
 .sidebar ul{
@@ -70,7 +85,7 @@ body{
 
 .sidebar ul li .tooltip{
     position: absolute;
-    left: 122px;
+    left: 122px; 
     top: 50%;
     transform: translateY(-50%);
     border-radius: 6px;
@@ -83,6 +98,10 @@ body{
     transform: 0s;
     opacity: 0;
     pointer-events: none;
+}
+
+.sidebar.active ul li .tooltip{
+
 }
 
 .sidebar ul li:hover .tooltip{
@@ -111,6 +130,12 @@ body{
     z-index: 99;
     color: #fff;
     font-size: 22px;
+    transition: all o.5 ease;
+}
+
+.sidebar ul li .bx-search-alt:hover{
+    background: #fff;
+    color: #1d1b31;
 }
 
 .sidebar ul li a{
