@@ -37,6 +37,7 @@ body{
     align-items: center;
     opacity: 0;
     pointer-events: none;
+    transition: all 0.5s ease;
 }
 
 .sidebar.active .logo_content .logo{
@@ -87,7 +88,7 @@ body{
     position: absolute;
     left: 122px; 
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
     border-radius: 6px;
     height: 35px;
     width: 122px;
@@ -98,10 +99,11 @@ body{
     transform: 0s;
     opacity: 0;
     pointer-events: none;
+    display: block;
 }
 
 .sidebar.active ul li .tooltip{
-
+    display: none;
 }
 
 .sidebar ul li:hover .tooltip{
@@ -130,7 +132,7 @@ body{
     z-index: 99;
     color: #fff;
     font-size: 22px;
-    transition: all o.5 ease;
+    transition: all o.5s ease;
 }
 
 .sidebar ul li .bx-search-alt:hover{
@@ -145,6 +147,7 @@ body{
     text-decoration: none;
     transition: all 0.4s ease;
     border-radius: 12px;
+    white-space: nowrap;
 }
 
 .sidebar ul li a:hover{
@@ -160,6 +163,17 @@ body{
     text-align: center;
 }
 
+.sidebar .links_name{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active .links_name{
+    opacity: 1;
+    pointer-events: auto
+}
+
 .sidebar .profile_content{
     position: absolute;
     color: #fff;
@@ -172,12 +186,25 @@ body{
     position: relative;
     padding: 10px 6px;
     height: 60px;
+    background: none;
+    transition: all 0.4s ease;
+}
+
+.sidebar.active .profile_content .profile{
     background: #1d1b31;
 }
 
 .profile_content .profile .profile_details{
     display: flex;
     align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.sidebar.active .profile .profile_details{
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .profile .profile_details img{
@@ -201,20 +228,32 @@ body{
 
 .profile #log_out{
     position: absolute;
-    left: 88%;
+    left: 50%;
     bottom: 5px;
     transform: translateX(-50%);
     min-width: 50px;
     line-height: 50px;
     font-size: 20px;
     border-radius: 12px;
+    text-align: center;
+    transition: all 0.4s ease;
+    background: #1d1b31;
+}
+
+.sidebar.active .profile #log_out{
+    left: 88%;
+}
+
+.sidebar.active .profile #log_out{
+    background: none;
 }
 
 .home_content{
     position: absolute;
     height: 100%;
-    width: calc(100% -240px);
-    left: 240px;
+    width: calc(100% -78px);
+    left: 78px;
+    transition: all 0.5 ease;
 }
 .home_content .text{
     font-size: 25px;
@@ -222,3 +261,8 @@ body{
     color: #1d1b31;
     margin: 12px;
 } 
+
+.sidebar.active ~ .home_content{
+    width: calc(100%-240px);
+    left: 240px;
+}
