@@ -5,9 +5,12 @@
             <title>Responsive Sidebar Menu</title>
             <!--Use Boxicons CDN Link-->
             <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-            <link rel="stylesheet"> <!--href="stylebar.css"-->
+            <link rel="stylesheet"> <href="stylebar.css">
                 <meta name="viewpart" content="width=device-width, initial-scale=1.0">
+                <!--Dark Mode-->
+                <!--meta name="color-scheme" content="dark" /-->
     </Head>
+    
     <Body>
         <!--Menu Sidebar-->
         <div class="sidebar">
@@ -17,11 +20,13 @@
                 <i class='bx bxs-book-open'></i>
                 <span class="logo_name">Bookstore</span>
             </div>
-        <ul class="nav_links">
+        
+        <ul class="nav_list">
+            
             <li>
                 <i class='bx bx-search-alt'></i>    
                 <input type="text" placeholder="Search...">
-                <span class="tooltip">Search</span>
+                <!--span class="tooltip">Search</span-->
             </li>
 
             <li>
@@ -29,17 +34,17 @@
                 <i class='bx bxs-grid-alt'></i>
                 <span class="links_name">Dashboard</span>
                 </a>
-                <span class="tooltip">Dashboard</span>
+                <!--span class="tooltip">Dashboard</span-->
             </li>
             
-            <li>
+            <!--li>
                 <div class="">
                     <a href="#">
                         <i class='bx bx-collection'></i>
                         <span class="links_name">Category</span>
                         <i class='bx bx-caret-down'></i>
                     </div>
-                    <!--ul class="sub-menu">
+                    <ul class="sub-menu">
                         <li><a href="#">Manga</a></li>
                         <li><a href="#">Box Set</a></li>
                         <li><a href="#">Novels</a></li>
@@ -48,8 +53,9 @@
                 Box Set
                 Novels</span>
                     </a>
-            </ul-->    
-            </li>    
+            </ul>
+
+            </li-->    
     
             <li>
                 <a href="#">
@@ -108,8 +114,9 @@
             </li>
             
         </ul>
+        <div class="profile_content">
+            
         </div>
-    </div>
-</div>
+        </div>
     </Body>
 </html>
