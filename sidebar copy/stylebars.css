@@ -97,7 +97,7 @@ body{
     transform: 0s;
     opacity: 0;
     pointer-events: none;
-    display: block;
+    display: none;
 }
 
 .sidebar.active ul li .tooltip{
@@ -152,3 +152,96 @@ body{
     background-color: #fff;
 }
 
+.sidebar ul li a i{
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+}
+
+/*ปรับ icon*/
+.sidebar ul li i{
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+}
+
+/*links icon*/
+.sidebar .nav-list li .icon-link{
+    display: flex;
+}
+
+/*profile*/
+.sidebar .profile_content{
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.sidebar .profile_content .profile{
+    position: relative;
+    padding: 10px 6px;
+    height: 60px;
+    background: none;
+}
+
+.sidebar.active .profile_content .profile{
+    background: #1d1b31;
+}
+
+.profile_content .profile .profile_details{
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.sidebar.active .profile .profile_details{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.profile .profile_details img{
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.profile .profile_details .name_job{
+    margin-left: 10px;
+}
+
+.profile .profile_details .name{
+    font-size: 12px;
+}
+
+.profile .profile_details .job{
+    font-size: 12px;
+}
+
+.profile #log_out{
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-100%);
+    min-width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 12px;
+    text-align: center;
+    background: #1d1b31;
+}
+
+.sidebar.active .profile #log_out{
+    left: 88%;
+}
+
+.sidebar.active .profile #log_out{
+    background: none;
+}
