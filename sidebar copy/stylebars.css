@@ -174,14 +174,6 @@ body{
 }
 
 /*profile*/
-.sidebar .profile_content{
-    position: absolute;
-    color: #fff;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-
 .sidebar .profile_content .profile{
     position: relative;
     padding: 10px 6px;
@@ -229,19 +221,11 @@ body{
     position: absolute;
     left: 50%;
     bottom: 5px;
-    transform: translateX(-100%);
+    transform: translateX(-50%);
     min-width: 50px;
     line-height: 50px;
     font-size: 20px;
     border-radius: 12px;
     text-align: center;
     background: #1d1b31;
-}
-
-.sidebar.active .profile #log_out{
-    left: 88%;
-}
-
-.sidebar.active .profile #log_out{
-    background: none;
 }
