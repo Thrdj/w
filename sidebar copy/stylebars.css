@@ -1,0 +1,154 @@
+/*Google Font CDN Link*/
+/*@import url('')*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Popins", ;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*customize side bar*/
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 240px;
+    background: #11101d;
+    padding: 6px 14px;
+}
+
+.sidebar.active {
+    width: 240px;
+}
+
+/*header logo side bar*/
+.sidebar .logo_content .logo{
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+}
+
+.sidebar.active .logo_content{
+    opacity: 1;
+}
+
+/*customize icon*/
+.logo_content .logo i{
+    font-size: 28px;
+    margin-right: 5px; 
+}
+
+/*logo all content*/
+.sidebar .logo_content .logo_name{
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.logo_content .logo_name{
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.logo_content .logo_name{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/*ul links*/
+.sidebar ul{
+    margin-top: 20px;
+}
+
+/*menu bar*/
+.sidebar ul li{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 0 5px;
+    list-style: none;
+    line-height: 50px;
+}
+
+/*menubar icon show*/
+.sidebar ul li .tooltip{
+    position: absolute;
+    left: 122px; 
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+    height: 35px;
+    width: 122px;
+    background: #fff;
+    line-height: 35px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: 0s;
+    opacity: 0;
+    pointer-events: none;
+    display: block;
+}
+
+.sidebar.active ul li .tooltip{
+    display: none;
+}
+
+.sidebar ul li:hover .tooltip{
+    opacity: 1;
+    top: 50%;
+}
+
+/*input search*/
+.sidebar ul li input{
+    position: absolute;
+    height: 100%;
+    width: 100%; 
+    left: 0;
+    top: 0;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background: #1d1b31;
+    padding-left: 50px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.sidebar ul li .bx-search-alt{
+    position: absolute;
+    z-index: 99;
+    color: #fff;
+    font-size: 22px;
+}
+
+.sidebar ul li .bx-search-alt:hover{
+    background: #fff;
+    color: #1d1b31;
+}
+
+/*url*/
+.sidebar ul li a{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 12px;
+    white-space: nowrap;
+}
+
+.sidebar ul li a:hover{
+    color: #11101d;
+    background-color: #fff;
+}
+
