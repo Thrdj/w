@@ -29,6 +29,17 @@ body{
     width: 240px;
 }
 
+.sidebar .logo_details{
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
 /*header logo side bar*/
 .sidebar .logo_content .logo{
     color: #fff;
@@ -40,6 +51,24 @@ body{
 
 .sidebar.active .logo_content{
     opacity: 1;
+}
+
+.sidebar.active .logo_details{
+    opacity: 1;
+}
+
+.logo_details i{
+    font-size: 28px;
+    margin-right: 5px; 
+}
+
+.sidebar .logo_details i{
+    font-size: 30px;
+    color: #fff;
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
 }
 
 /*customize icon*/
@@ -79,34 +108,6 @@ body{
     margin: 0 5px;
     list-style: none;
     line-height: 50px;
-}
-
-/*menubar icon show*/
-.sidebar ul li .tooltip{
-    position: absolute;
-    left: 122px; 
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 6px;
-    height: 35px;
-    width: 122px;
-    background: #fff;
-    line-height: 35px;
-    text-align: center;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    transform: 0s;
-    opacity: 0;
-    pointer-events: none;
-    display: none;
-}
-
-.sidebar.active ul li .tooltip{
-    display: none;
-}
-
-.sidebar ul li:hover .tooltip{
-    opacity: 1;
-    top: 50%;
 }
 
 /*input search*/
@@ -170,6 +171,11 @@ body{
     text-align: center;
 }
 
+.sidebar.active .links_name{
+    opacity: 1;
+    pointer-events: auto
+}
+
 /*links icon*/
 .sidebar .nav-list li .icon-link{
     display: flex;
@@ -184,7 +190,19 @@ body{
     width: 100%;
 }
 
+.sidebar .profile_content .profile{
+    position: relative;
+    padding: 10px 6px;
+    height: 60px;
+    background: none;
+    transition: all 0.4s ease;
+}
+
 /*bg profile*/
+.sidebar.active .profile_content .profile{
+    background: #1d1b31;
+}
+
 .sidebar .profile_content .profile{
     position: relative;
     padding: 10px 6px;
@@ -192,21 +210,7 @@ body{
     background: #1d1b31;
 }
 
-.profile_content .profile .profile_details{
-    display: flex;
-    align-items: center;
-    opacity: 0;
-    pointer-events: none;
-    white-space: nowrap;
-}
-
-
-.sidebar.active .profile .profile_details{
-    opacity: 1;
-    pointer-events: auto;
-}
-
-
+/*Profile*/
 .profile .profile_details img{
     height: 45px;
     width: 45px;
@@ -214,28 +218,33 @@ body{
     border-radius: 12px;
 }
 
+/*name*/
 .profile .profile_details .name_job{
     margin-left: 10px;
 }
 
+/*name*/
 .profile .profile_details .name{
     font-size: 12px;
 }
 
+/*name*/
 .profile .profile_details .job{
     font-size: 12px;
 }
 
+/*icon log out*/
 .profile #log_out{
     position: absolute;
-    left: 50%;
+    right: 0.5%;
     bottom: 5px;
     transform: translateX(-50%);
+    margin-right: 10px;
     min-width: 50px;
     line-height: 50px;
     font-size: 20px;
     border-radius: 12px;
-    text-align: center;
-    transition: all 0.4s ease;
-    background: #1d1b31;
+    text-align: right;
+    background-position: right;
 }
+
