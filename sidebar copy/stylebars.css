@@ -176,11 +176,61 @@ body{
     pointer-events: auto
 }
 
-/*links icon*/
-.sidebar .nav-list li .icon-link{
-    display: flex;
+.sidebar .nav-list{
+    background: red;
+    height: 100%;
+    padding-top: 30px;
 }
 
+.sidebar .nav-list li{
+    position: relative;
+    list-style: none;
+}
+
+.sidebar .nav-list li i{
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+ }
+
+.sidebar .nav-list li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+ }
+
+.sidebar .nav-list li a .links_name{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+
+ }
+/*links icon*/
+.sidebar .nav-list li .iocn-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*drop down*/
+.sidebar .nav-list li a .sub-menu{
+    padding: 6px 6px 14px 80px;
+    margin-top: -10px;
+}
+
+.sidebar .nav-list li a .sub-menu a{
+    color: #fff;
+    font-size: 15px;
+    padding: 0;
+}
+
+.sidebar .nav-list li a .sub-menu{
+    padding: 6px 6px 14px 80px;
+    margin-top: -10px;
+}
 /*profile*/
 .sidebar .profile_content{
     position: absolute;
