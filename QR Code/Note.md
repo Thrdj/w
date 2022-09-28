@@ -7,3 +7,5 @@ Install using npm (node.js)
         <script src="https://unpkg.com/html5-qrcode"></script>
     npm Install Bootstrap in your Node.js powered apps with the npm package:
         $npm install bootstrap@5.2.1
+    Clearing the canvas after use
+        html5QrCode.clear();
