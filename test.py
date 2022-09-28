@@ -1,6 +1,7 @@
 #pip install langdetect
 
 #importing library
+from csv import reader
 from langdetect import detect
 
 #talking input from user
@@ -37,5 +38,12 @@ print("Wrong words :", words)
 print("Corrected Words are :")
 for i in corrected_words:
     print(i.correct(),end="")
+
+#Extract Text from PDF
+import PyPDF2
+pdf = open("pythonclcoding.pdf","rb")
+reader = PyPDF2.PdffileReader(pdf)
+page = reader.getPage(0)
+print(page.extractText())
 
 #clcoding.com
