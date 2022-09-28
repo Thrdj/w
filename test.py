@@ -1,3 +1,14 @@
+#pip install langdetect
+
+#importing library
+from langdetect import detect
+
+#talking input from user
+text = input("Enter any text in any language: ")
+
+#printng output
+print(detect(text))
+
 #QR Code using Python
 #stuck pyqrcode not working#
 import pyqrcode
@@ -13,3 +24,4 @@ decocdeQR = decode(Image.open('qrcode_www.w3schools.com.png'))
 print(decocdeQR[0].data.decode('ascii'))
 
 #clcoding.com
+
